@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Register</h1>
+  <label for="username">Username:</label>
+  <input type="text" id="username"><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password"><br>
+
+  <label for="confirmPassword">Confirm Password:</label>
+  <input type="password" id="confirmPassword"><br>
+
+  <label for="email">Email:</label>
+  <input type="email" id="email"><br>
+
+  <label for="confirmEmail">Confirm Email:</label>
+  <input type="email" id="confirmEmail"><br>
+
+  <button onclick="validateForm()">Register</button>
+
+  <div id="errorMessages"></div>
+
+  <table id="userData" style="display: none;">
+    <!-- นี่คือตารางที่จะแสดงข้อมูลหากไม่มี error -->
+  </table>
+
+<script src="app.js"></script> <!--Link JavaScript-->
+</body>
+</html>
